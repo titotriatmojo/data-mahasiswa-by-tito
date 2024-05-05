@@ -106,7 +106,7 @@ include 'koneksi.php'
     if ($konsentrasiSelect == 'konsentrasi_mis') {
         $konsentrasi = 'Management Information System (MIS)';}
 
-    $sqlGet = "SELECT * FROM mahasiswa WHERE nim=$nim'";
+    $sqlGet = "SELECT * FROM mahasiswa WHERE nim='$nim'";
     $queryGet = mysqli_query($conn, $sqlGet);
     $cek = mysqli_num_rows($queryGet);
     $sqlInsert = "INSERT INTO 
